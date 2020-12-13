@@ -275,8 +275,8 @@ msg_eof = * - stringtbl
 ; Filenames
 ;***************************************
 filename1
-    !text "file1"
+    !text "file1,r"
 filename1_len = * - filename1
 filename2
-    !text "file2"
+    !text "file2,r"
 filename2_len = * - filename2
