@@ -59,7 +59,9 @@ It can be assembled for C128 or C64 by defining `TARGET` as '64' or '128' (`-DTA
 If you have a Unix-like shell (Msys on Windows works too), with ACME and VICE on your path, the included Makefile will automate building and launching a disk image containing the `readtest` program and suitable input files:
 
 `make DRIVE=1541 run` will build and run the C128 version with a 1541 drive
+
 `make DRIVE=1571 run` will build and run the C128 version with a 1571 drive
+
 `make DRIVE=1571 run64` will build and run the C64 version with a 1571 drive
 
 If `DRIVE` is not specified, a 1571 drive will be used in both cases.

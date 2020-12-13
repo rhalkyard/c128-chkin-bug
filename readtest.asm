@@ -132,10 +132,8 @@ start
     rts ; quit to BASIC
 
 ;***************************************
-; Print A as a PETSCII character, 
-; escaping nonprinting characters as 
-; hex values
-; Preserves registers
+; Call CHKIN and exit if it fails
+; Destroys A, X
 ;***************************************
 do_chkin
     jsr CHKIN
