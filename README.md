@@ -43,6 +43,8 @@ The issue appears to be triggered under the following conditions:
 
 When these conditions are true, the next byte read with `CHRIN` from file `B` will either be garbled (1541) or may have skipped ahead and 'lost' one byte since the preivous read (1571).
 
+The issue occurs in both `FAST` and `SLOW` modes.
+
 Building and running the test
 -----------------------------
 
