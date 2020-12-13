@@ -56,6 +56,8 @@ Building and running the test
 
 It can be assembled for C128 or C64 by defining `TARGET` as '64' or '128' (`-DTARGET=64` or `-DTARGET=128`).
 
+[readtestb.bas](./readtestb.bas) is a BASIC program that does more-or-less the same thing, and will run on both the C64 and C128. Interestingly, it does *not* seem to trigger this issue. Note that because it is a BASIC V2 program, VICE autoloading will fail on the C128 - it must be loaded manually with `LOAD "*",8` (not `,8,1`).
+
 If you have a Unix-like shell (Msys on Windows works too), with ACME and VICE on your path, the included Makefile will automate building and launching a disk image containing the `readtest` program and suitable input files:
 
 `make DRIVE=1541 run` will build and run the C128 version with a 1541 drive
@@ -115,5 +117,3 @@ First character after `CHKIN` gets garbled:
 No data corruption:
 
 ![](./images/64.png)
-
-
